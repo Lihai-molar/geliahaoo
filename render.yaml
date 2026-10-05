@@ -1,0 +1,13 @@
+# Render 蓝图：https://render.com/docs/blueprint-spec
+# 用法：把本仓库推到 GitHub，在 Render 里 New -> Blueprint，选中本仓库即可。
+services:
+  - type: web
+    name: geliahao
+    runtime: node
+    plan: free
+    buildCommand: npm install --omit=dev
+    startCommand: node server.js
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_ENV
+        value: production
