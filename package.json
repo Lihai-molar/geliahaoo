@@ -1,0 +1,16 @@
+{
+  "name": "geliahao",
+  "version": "1.0.0",
+  "description": "哥俩好 - 双人联机合作跳跃闯关小游戏（网页版 + Node.js WebSocket 服务器）",
+  "main": "server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
